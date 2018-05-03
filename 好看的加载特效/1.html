@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>特效1</title>
+        <style>
+            .loading{ 
+                width: 150px; 
+                height: 4px; 
+                border-radius: 
+                2px; margin: 0 auto; 
+                margin-top:100px; 
+                position: relative; 
+                background: lightgreen; 
+                -webkit-animation: changeBgColor 1.04s ease-in infinite alternate; 
+            } 
+            .loading span{ 
+                display: inline-block; 
+                width: 16px; 
+                height: 16px; 
+                border-radius: 50%; 
+                background: lightgreen; 
+                position: absolute; 
+                margin-top: -7px; 
+                margin-left:-8px; 
+                -webkit-animation: changePosition 1.04s ease-in infinite alternate; 
+            } 
+            @-webkit-keyframes changeBgColor{ 
+                0%{ background: lightgreen; } 
+                100%{ background: lightblue; } 
+            } 
+            @-webkit-keyframes changePosition{ 
+                0%{ background: lightgreen; } 
+                100%{ margin-left: 142px; background: lightblue; } 
+            }
+
+
+        /* 
+        作者：JR93
+        链接：https://www.jianshu.com/p/6ac3e3e12d61
+        來源：简书
+        著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。 
+        */
+        </style>
+    </head>
+    <body>
+        <div class="loading">
+            <span></span>
+        </div>
+    </body>
+</html>
